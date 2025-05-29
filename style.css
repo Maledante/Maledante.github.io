@@ -1,0 +1,108 @@
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(-45deg, #1e1e2f, #4e4376, #2b5876, #1e3c72);
+  background-size: 400% 400%;
+  animation: gradientBG 15s ease infinite;
+  color: #fff;
+}
+
+@keyframes gradientBG {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+header, footer {
+  background: rgba(0, 0, 0, 0.8);
+  color: #fff;
+  padding: 1em;
+  text-align: center;
+}
+
+nav a {
+  color: #fff;
+  margin: 0 1em;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav a:hover {
+  color: #929292;
+}
+
+main {
+  flex: 1;
+  padding: 2em;
+  animation: fadeIn 1s ease-in;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.projects li {
+  background: rgba(255, 255, 255, 0.1);
+  margin-bottom: 1em;
+  padding: 1em;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+}
+
+.projects li:hover {
+  transform: scale(1.03);
+}
+
+.projects a {
+  color: #00bfff;          
+  text-decoration: none;
+  font-weight: normal;
+}
+
+.projects a:hover {
+  color: #87cefa;
+  text-decoration: underline;
+}
+
+
+input, textarea {
+  width: 100%;
+  padding: 0.75em;
+  border: none;
+  border-radius: 5px;
+  margin-bottom: 1em;
+}
+
+button {
+  background: #ffd700;
+  color: #000;
+  border: none;
+  padding: 0.75em 1.5em;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #e6c200;
+}
+
+footer a {
+  color: #ffffff;
+  text-decoration: none;
+  margin: 0 0.5em;
+}
+
+footer a:hover {
+  color: #929292;
+}
